@@ -1,0 +1,35 @@
+/*color variables*/
+:root {
+
+}
+/*setting default font for the entire page*/
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*header contains navigation links*/
+header {
+    background-color: #4287f5;
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+}
+
+header nav {
+    flex: 2 1 auto;
+}
+
+header nav ul {
+    font-size: 24px;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+
+
+.item {
+    background-image: url("../images/placeholder-400x300.png");
+    width: 200px;
+    height: 100px;
+}
