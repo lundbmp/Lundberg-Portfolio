@@ -1,10 +1,13 @@
 /*color variables*/
 :root {
-
+    --primary-color: rgb(225,221,191);
+    --secondary-color: rgb(4,37,58);
+    --tertiary-color: rgb(76,131,122);
+    --font-color: white;
 }
 
 html {
-    background-color: blueviolet;
+    background-color: var(--primary-color);
 }
 /*setting default font for the entire page*/
 * {
@@ -13,78 +16,101 @@ html {
 
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: black;
+    color: var(--font-color);
 }
 
 /*header contains navigation links*/
 header {
-    background-color: #4287f5;
+    background-color: var(--secondary-color);
     display: flex;
     justify-content: space-between;
-    gap: 5%;
 }
 
 header nav {
-    flex: 2 1 auto;
-    background-color: #4287f5;
+    flex: 1 0 auto;
+    background-color: var(--secondary-color);
 }
 
 header a {
     text-decoration: none;
-    color: yellow;
+    color: var(--font-color);
+    margin-left: 2em;
 }
 
 header nav ul {
-    color: yellow;
+    color: var(--font-color);
     font-size: 26px;
     display: flex;
     justify-content: space-around;
     list-style: none;
 }
 
+header h1 {
+    flex: 1 0 0;
+}
+
 /*about me styling*/
 .about-me {
-    background-color: aqua;
+    background-color: var(--tertiary-color);
     display: flex;
-    justify-content: space-around;
+    flex-wrap: nowrap;
+    justify-content: center;
     margin: 5em 10em 5em 10em;
 }
 
 .about-me article {
     margin-right: 2.5em;
     margin-left: 1.5em;
+    flex: 2 0 auto;
 }
 
-
+.about-me img {
+    height: auto;
+    width: 17em;
+}
 
 /*project-display section*/
 
 .project-display {
-    background-color: aqua;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin: 5em 10em 5em 10em;
+    margin-bottom: 2em;
 }
 
-.item {
-    background-image: url("../images/placeholder-400x300.png");
-    width: 400px;
-    height: 300px;
-    margin: 1em 1em 1em 1em;
+.project-display div{
+    background-color: var(--tertiary-color);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
+
+.project-display div div img {
+    width: 100%;
+    height: 200px;
+    flex-basis: auto;
+    margin: 1em 0 2em 0
+}
+
 
 /*Footer section/contact me*/
 
 footer {
-    background-color: aqua;
+    background-color: var(--secondary-color);
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
+footer h3 {
+    margin-left: 2em;
+}
+
 footer div {
-    flex: 2 1 auto;
+    flex: 1 1 auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: start;
+}
+
+.contact-icon {
+    height: 2em;
+    width: auto;
+    padding: 2em;
 }
