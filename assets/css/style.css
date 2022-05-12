@@ -10,9 +10,7 @@ html {
     background-color: var(--primary-color);
 }
 /*setting default font for the entire page*/
-* {
     
-}
 
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -52,6 +50,10 @@ header nav ul li a:hover {
 
 header h1 {
     flex: 1 0 0;
+}
+
+.short-text {
+    display: none;
 }
 
 /*about me styling*/
@@ -127,8 +129,8 @@ footer h3 {
 }
 
 footer div {
-    flex: 1 1 auto;
     display: flex;
+    flex: 1 1 auto;
     justify-content: start;
 }
 
@@ -143,7 +145,9 @@ footer div {
 @media (max-width: 768px) {
     body {
         font-size: 36px;
-        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
     }
 
     header {
@@ -176,5 +180,66 @@ footer div {
 }
 
 @media (max-width: 480px) {
-    
+    body {
+        font-size: 24px;
+        
+    }
+
+    header {
+        display: flex;
+        flex-basis: 100%;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .full-text {
+        display: none;
+    }
+
+    .short-text {
+        display: flex;
+        justify-content: start;
+        font-size: 20px;
+        text-align: start;
+        flex-basis: auto;
+    }
+
+    header h1 {
+        display: flex;
+    }
+
+    header nav {
+        display: flex;
+        flex: 3 0 0;
+    }
+
+    header nav ul li a {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .about-me {
+        display: flex;
+        flex: 0 0 100%;
+        margin: .5em 0 .5em 0;
+        padding-bottom: .7em;
+    }
+
+    .contact-me {
+        display: flex;
+        align-items: center;
+    }
+
+    .contact-me h3 {
+        display: flex;
+        flex-shrink: 2;
+        font-size: 20px;
+    }
+
+    .contact-icon {
+        display: flex;
+        height: 26px;
+    }
 }
