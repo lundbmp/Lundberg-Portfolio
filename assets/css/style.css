@@ -136,3 +136,13 @@ footer div {
     width: auto;
     padding: 2em;
 }
+
+/* Media queries */
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 480px) {
+    
+}
