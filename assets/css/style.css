@@ -52,10 +52,6 @@ header h1 {
     flex: 1 0 0;
 }
 
-.short-text {
-    display: none;
-}
-
 /*about me styling*/
 .about-me {
     background-color: var(--tertiary-color);
@@ -190,18 +186,6 @@ footer div {
         flex-basis: 100%;
         align-items: center;
         justify-content: start;
-    }
-
-    .full-text {
-        display: none;
-    }
-
-    .short-text {
-        display: flex;
-        justify-content: start;
-        font-size: 20px;
-        text-align: start;
-        flex-basis: auto;
     }
 
     header h1 {
