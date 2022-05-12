@@ -23,6 +23,7 @@ body {
 header {
     background-color: var(--secondary-color);
     display: flex;
+    flex: 0 0 100%;
     justify-content: space-between;
 }
 
@@ -140,6 +141,37 @@ footer div {
 /* Media queries */
 
 @media (max-width: 768px) {
+    body {
+        font-size: 36px;
+        
+    }
+
+    header {
+        display: flex;
+        flex-basis: 100%;
+        align-items: center;
+    }
+
+    header h1 {
+        display: flex;
+        font-size: 30px;
+        text-align: start;
+    }
+
+    .about-me {
+        display: flex;
+        flex: 0 0 100%;
+        margin: .5em .5em .5em .5em;
+        padding-bottom: .7em;
+    }
+
+    .contact-me {
+        display: flex;
+    }
+
+    .contact-me h3 {
+        font-size: 36px;
+    }
 
 }
 
