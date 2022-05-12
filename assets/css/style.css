@@ -45,6 +45,10 @@ header nav ul {
     list-style: none;
 }
 
+header nav ul li a:hover {
+    color: var(--primary-color);
+}
+
 header h1 {
     flex: 1 0 0;
 }
