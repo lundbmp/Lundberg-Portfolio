@@ -36,7 +36,6 @@ header h1 {
     flex: 1 0 0;
 }
 
-
 /* specifically styling the nav box and all children nav links */
 header nav {
     flex: 1 0 auto;
