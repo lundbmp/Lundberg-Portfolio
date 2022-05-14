@@ -59,7 +59,7 @@ header nav ul li a:hover {
 .about-me {
     background-color: var(--tertiary-color);
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: center;
     margin: 5em 10em 5em 10em;
 }
@@ -68,6 +68,7 @@ header nav ul li a:hover {
     margin-right: 2.5em;
     margin-left: 1.5em;
     flex: 2 2 auto;
+    word-wrap: break-word;
 }
 
 .about-me img {
@@ -168,6 +169,7 @@ header nav ul li a:hover {
     .about-me {
         display: flex;
         flex: 0 0 100%;
+        flex-wrap: wrap;
         margin: .5em .5em .5em .5em;
         padding-bottom: .7em;
     }
@@ -217,6 +219,7 @@ header nav ul li a:hover {
     .about-me {
         display: flex;
         flex: 0 0 100%;
+        flex-wrap: wrap;
         margin: .5em 0 .5em 0;
         padding-bottom: .7em;
     }
