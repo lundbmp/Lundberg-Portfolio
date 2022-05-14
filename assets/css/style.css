@@ -141,6 +141,7 @@ footer div {
 @media (max-width: 768px) {
     body {
         font-size: 36px;
+        width: 740px;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -178,7 +179,8 @@ footer div {
 @media (max-width: 480px) {
     body {
         font-size: 24px;
-        
+        display: flex;
+        width: 400px;
     }
 
     header {
@@ -190,6 +192,8 @@ footer div {
 
     header h1 {
         display: flex;
+        flex-shrink: 10;
+        font-size: 12px;
     }
 
     header nav {
